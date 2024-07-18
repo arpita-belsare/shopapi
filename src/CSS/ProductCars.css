@@ -8,8 +8,10 @@
     border: 2px solid #ccc;
     border-radius: 5px; 
     margin: 20px auto; 
+    margin-top: 80px;
+    outline: none;
+
   }
-  
   .suggestions {
     width: 80%;
     max-height: 200px;
@@ -24,31 +26,38 @@
     left: 152px;
     top: 114px;
     border-radius: 5px;
+    text-align: left;
   }
-  
+  .suggestion-list{
+    padding:5px 8px ;
+    transition: 0.3s;
+    color: rgb(41, 39, 39);
+    font-weight: 530;
+  }
+  .suggestion-list:hover{
+    padding: 8px 13px;
+  }
   .suggestion-item {
     padding: 10px;
     font-size: 16px;
     cursor: pointer;
     border-bottom: 1px solid #ccc; 
+    
   }
-  
   .suggestion-item:hover {
     background-color: #f0f0f0;
   }
-  
   .topWrapper{ 
     margin: 10px auto;
     text-align: center;
   
   }
-  
-  
   .cardWrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 20px; 
     justify-content: center;
+    margin-bottom: 20px;
   }
   
   .mainCard {
@@ -59,6 +68,7 @@
     padding: 10px;
     text-decoration: none;
     color: #000;
+
   }
   .mainCard2{
     margin: 1px 2px;
@@ -71,6 +81,10 @@
     max-width: 100%;
     max-height: 150px;
     object-fit: cover;
+    transition: 0.7s;
+  }
+  .mainCard img:hover{
+    transform: scale(1.192);
   }
   .product-info{
     text-align: left;
@@ -82,8 +96,16 @@
   }
 .mainCard .fakeprice{
   text-decoration: line-through;
-  color: red;
+  color: rgb(212, 198, 198);
   margin: 0 5px;
+}
+.mainCard span{
+  font-size: 1.5em;
+}
+.mainCard span >  img{
+  width: 20px;
+  height: 20px;
+  margin: 5px;
 }
   
   .mainCard h4 {

@@ -1,5 +1,5 @@
 import useCartStore from "../Zustand/store"
-
+import '../CSS/Cart.css'
 const CartPage = () => {
 
     const cartItems = useCartStore((state) => state.items);
@@ -8,9 +8,8 @@ const CartPage = () => {
 const handleClearCart = ()=>{
     clearCart();
 }
-
   return (
-  <div>
+  <div className="m">
     <h1>CartItems - ({cartItems.length})</h1>
     <button onClick={handleClearCart} >Clear Cart</button>
     {

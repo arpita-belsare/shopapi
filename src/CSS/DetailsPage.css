@@ -37,6 +37,7 @@
   .details-container p {
     font-size: 1.2em;
     margin-bottom: 10px;
+    text-align: left;
     animation: slideUp 1s ease-in-out;
   }
   
@@ -90,7 +91,20 @@
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
   
-  .details-container div:hover { 
+  .details-container #product-info:hover { 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
-  
+  button{
+    background-color: rgb(62, 62, 255);
+    padding: 1% 2%;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 2px;
+    transition: 0.2s ease;
+    }
+    button:hover{
+      padding: 1.1% 2.2%;
+      background-color: rgb(93, 93, 240);
+    }
+

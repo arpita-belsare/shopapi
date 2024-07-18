@@ -6,8 +6,10 @@
 nav {
     background-color: #333;
     padding: 15px 20px;
-  }
-  
+    position: fixed;
+    top:0%;
+    width: 100%;
+    }
   nav ul {
     list-style-type: none;
     display: flex;

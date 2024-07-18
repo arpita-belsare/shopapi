@@ -3,7 +3,8 @@ import { PRODUCT_API } from "../Constant/apiConstant";
 import axios from "axios";
 import "../CSS/ProductCars.css";
 import { Link } from "react-router-dom";
-
+import star1 from "../Image/icons8-star-half-empty-48.png"
+import star2 from "../Image/icons8-star-48.png"
 const ProductCards = () => {
   const imageSize = { width: "150px", height: "150px" };
   const [products, setProducts] = useState([]);
@@ -73,9 +74,10 @@ const ProductCards = () => {
           suggestions?.map((product, index) => (
             <div
               key={index}
-              style={{ border: "1px solid grey" }}
+              style={{ border: "1px solid grey"}}
               onClick={() => handleSuggestionClick(product.title)}
               onFocus={handleToggle}
+              className="suggestion-list"
               // onBlur={}
             >
               {product.title}
@@ -92,8 +94,7 @@ const ProductCards = () => {
               <Link
                 key={index}
                 to={`/product/${product.id}`}
-                className="mainCard"
-              >
+                className="mainCard">
                <div className="mainCard2">
                <div>
                   <img
@@ -104,9 +105,13 @@ const ProductCards = () => {
                  <div className="product-info">
                  <h6> {product.title} </h6>
                   <h4><span className="fakeprice">$300</span>${product?.price} </h4>
-                  <div>
-                    <span> {product?.rating.rate} </span>
-                  </div>
+                 
+                    <span> {product?.rating.rate} 
+                    <img src={star2} alt="" />
+                    <img src={star2} alt="" />
+                    <img src={star2} alt="" />
+                      <img src={star1} alt="" />
+                    </span>
                  </div>
                </div>
                 </div>
@@ -114,19 +119,6 @@ const ProductCards = () => {
             );
           })
         )}
-
-        {/* {products?.map((product, index) => {
-          return (
-            <div key={index} className="mainCard">
-              <img src={product.image} alt={product.title} style={imageSize} />
-              <h6> {product.title} </h6>
-              <h4> {product?.price} </h4>
-              <div>
-                <span> {product?.rating.rate} </span>
-              </div>
-            </div>
-          );
-        })} */}
       </div>
     </div>
   );
