@@ -104,13 +104,12 @@ const ProductCards = () => {
                   />
                  <div className="product-info">
                  <h6> {product.title} </h6>
-                  <h4><span className="fakeprice">$300</span>${product?.price} </h4>
-                 
+                  <h4>${product?.price}</h4>
                     <span> {product?.rating.rate} 
                     <img src={star2} alt="" />
                     <img src={star2} alt="" />
                     <img src={star2} alt="" />
-                      <img src={star1} alt="" />
+                    <img src={star1} alt="" />
                     </span>
                  </div>
                </div>

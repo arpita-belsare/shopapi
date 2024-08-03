@@ -13,7 +13,9 @@
     margin-bottom: 20px;
     animation: slideDown 1s ease-in-out;
   }
-  
+  h3{
+    color: grey;
+  }
   .details-container img {
     width: 300px;
     height: auto;

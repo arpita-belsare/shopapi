@@ -33,8 +33,8 @@ const DetailsPage = () => {
         <div>
           <img src={product.image} alt={product.title} />
          <div id="product-info">
-         <h3> {product.title} </h3>
-          <p> {product.description} </p>
+         <h3> {product.title}</h3>
+          <p> {product.description}</p>
           <p> {product.price} </p>
           <button  onClick={handleAddToCart} > Add to cart </button>
         </div>
