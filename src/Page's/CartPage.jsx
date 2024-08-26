@@ -10,26 +10,19 @@ const handleClearCart = ()=>{
 }
   return (
   <div className="m"> 
-    <h1>CartItems - ({cartItems.length})</h1><br />
+    <h1> My Bag - ({cartItems.length} item)</h1>
     <button onClick={handleClearCart} >Clear Cart</button>
     <div className="Cartwrap">
     {
         cartItems?.map((item, index) => (
-            <div className="one-cart">
-            <div key={index} >
+            <div className="one-cart" key={index}>
+         
                   <img src={item.image} alt={item.title} />
-             <div className="product-details">
-             <h3> {item.title} </h3>
-             <span className="strik">$400</span>
-                <span>  ${item.price}</span>
-                <p> {item.description}</p>
-                <button>Buy Now</button>
-             </div>
-              </div>
-            </div>
-        ))
-    }
-    </div>
+             <h3>{item.title}</h3>
+             <h6><p>$40</p>${item.price}</h6>
+</div> ))
+}
+ </div>
   </div>
   )
 }

@@ -5,6 +5,4 @@ const useCartStore = create((set) => ({
     addItem: (item) => set((state) => ({items: [...state.items, item]  }) ),
     clearCart: () => set({items:[]}),
 }));
-
-
 export default useCartStore;

@@ -10,53 +10,63 @@
 .Cartwrap{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     border: 2px solid ridge;
-    justify-content: space-evenly;
     height: auto;
 }
 .one-cart{
-width: 25%;
+width: 70%;
 border: 1px solid rgb(196, 195, 195);
+height: 120px;
+padding: 1% 2%;
+margin: 20px 5px ;
 display: flex;
-height: fit-content;
-padding: 2% 1%;
-margin: 10px 5px ;
+justify-content: space-between;
 box-shadow: 1px 1px 1px 3px gainsboro;
 }
 .one-cart:hover{
     box-shadow: 1px 1px 1px 3px rgb(193, 189, 189);
 }
 .one-cart img{
-    width: 90%;
-    height: 250px;
+    width: 80px;
+    height: 90px;
     object-fit: cover;
-    margin: 2% 2.4%;
+    /* margin: 2% 2.4%; */
 }
-.product-details{
-padding: 2%;
-}
-.product-details h3{
-    color: rgb(62, 57, 57);
-    font-weight: 750;
-}
-.product-details span{
-    font-size: 2em;
-    font-weight: 900;
-    color: rgb(148, 130, 130);
+h6{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: rgb(163, 162, 162);
 }
 p{
-    color: rgb(72, 70, 70);
-    font-size: 1em;
-}
-.strik{
+    color: rgb(164, 164, 164);
+    font-size: 1.5em;
     text-decoration: line-through;
 }
-button{
+/* button{
     padding: 10px 20px;
     margin: 2%;
-}
-button:hover{
+} */
+
+/* button:hover{
     padding:11px 21px ;
     background: rgb(6, 92, 6);
-    color: aliceblue;
+    color: aliceblue; 
+}*/
+
+@media screen and (max-width:500px) {
+    .one-cart{
+        width: 95%;
+        height: 80px;
+        padding: 0.2%;
+    }
+    .one-cart img{
+        width: 60px;
+        height: 70px;
+    }
+  h3{
+    font-size: 0.6em;
+    margin: 0%;
+  }
+
 }
